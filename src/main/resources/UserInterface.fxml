@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="800.0" minWidth="1600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mil.dla.mapcatalog.view.UserInterfaceController">
+   <children>
+      <MenuBar id="menuBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Searches">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="User">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="NGA">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <HBox id="toolBar" focusTraversable="true" layoutY="33.0" prefHeight="40.0" prefWidth="1600.0" styleClass="specialDialog" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+          <Button fx:id="buttonLayer" mnemonicParsing="false" styleClass="toolBarButton" text="Layer" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Previous" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Next" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Full" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Identify" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Clear Selection" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Select By" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Find a Map" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="View Results" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Symbols" />
+            <Button mnemonicParsing="false" styleClass="toolBarButton" text="Shopping Cart" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <StackPane id="stackPaneBaseMap" alignment="TOP_LEFT" layoutX="1.0" layoutY="72.0" prefHeight="800.0" prefWidth="1600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" maxHeight="700.0" maxWidth="300.0" prefHeight="700.0" prefWidth="300.0">
+               <children>
+                  <DialogPane opacity="0.8">
+                     <header>
+                        <Button maxWidth="300.0" mnemonicParsing="false" text="Table of Contents" />
+                     </header>
+                     <content>
+                        <Accordion>
+                          <panes>
+                            <TitledPane animated="false" text="Aeronautical">
+                              <content>
+                                <VBox spacing="2.0">
+                                  <children>
+                                    <CheckBox mnemonicParsing="false" text="All" />
+                                    <CheckBox mnemonicParsing="false" text="European Flight Products">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Evasion Charts (EVC)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="FAA Charts and Publications">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Flight Information Publications (FLIP)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Global Navigation Charts (GNC)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="ICAO Information">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Jet Navigation Graphics (JNG)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Joint Operations Graphics (JOG)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Operational Nagivation Charts (ONC)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Tactical Pilotage Charts (TPC)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Micellaneous Aeronautical">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                  </children>
+                                </VBox>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Digital">
+                              <content>
+                                <VBox spacing="2.0">
+                                  <children>
+                                    <CheckBox mnemonicParsing="false" text="All" />
+                                    <CheckBox mnemonicParsing="false" text="Compressed Digital Raster Graphics (CDRG)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Controlled Image Base (CIB) 1m">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Controlled Image Base (CIB) 5m/10m">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Data Hard Drives">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Digital City Graphics (DCG)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Digital Nautical Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Digital Terrain Elevation Data (DTED) 1/2">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Digital Nautical Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Enhanced Compressed Raster Graphics (ECRG)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="GeoPDF">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Gravity Deflection of Vertical Data">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Shuttle Radar Topography Mission Data (SRTM)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Tactical Ocean Data">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Vecdtor Data Products (VMAP)">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Miscellaneous Digital">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                  </children>
+                              </VBox>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Hydrographic">
+                              <content>
+                                <VBox spacing="2.0">
+                                  <children>
+                                    <CheckBox mnemonicParsing="false" text="All" />
+                                    <CheckBox mnemonicParsing="false" text="Bottom Contour Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Coastal Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Combat / Littoral Planning Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Great Circle Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Harbor / Approach Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Nautical Publications and Items">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Naval Range and Operating Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Position Plotting Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="World Charts">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Miscellaneous Hydrographic">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                  </children>
+                                </VBox>
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Topographic">
+                              <content>
+                                <VBox spacing="2.0">
+                                  <children>
+                                    <CheckBox mnemonicParsing="false" text="All" />
+                                    <CheckBox mnemonicParsing="false" text="25,000">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="50,000">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="100,000">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="250,000">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Atlases">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="City">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Compound Mpas">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Military Installation Maps">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="World and Reference Maps">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="Miscellaneous Topographic">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                  </children>
+                                </VBox>
+                              </content>
+                            </TitledPane>
+
+                            <TitledPane animated="false" text="US Geological Survey">
+                              <content>
+                                <VBox spacing="2.0">
+                                  <children>
+                                    <CheckBox mnemonicParsing="false" text="All" />
+                                    <CheckBox mnemonicParsing="false" text="USGS Northeast">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="USGS Southeast">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="USGS Northwest">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="USGS Sourthwest">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                    <CheckBox mnemonicParsing="false" text="USGS AK/HI/PR">
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding></CheckBox>
+                                  </children>
+                                </VBox>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </content>
+                  </DialogPane>
+                  <AnchorPane opacity="0.8" styleClass="overviewMap">
+                     <children>
+                        <Button mnemonicParsing="false" opacity="0.8" text="Overview Map" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <StackPane alignment="CENTER_LEFT" layoutX="6.0" layoutY="27.0" prefHeight="173.0" prefWidth="294.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <DialogPane id="statusBar" contentText="Status bar content" headerText="Status Bar" layoutY="750.0" maxHeight="15.0" styleClass="specialDialog" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

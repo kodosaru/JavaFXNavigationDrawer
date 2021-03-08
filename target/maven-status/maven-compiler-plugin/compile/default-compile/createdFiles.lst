@@ -1,0 +1,5 @@
+com\genuinecoder\main\ColorChangeCallback.class
+com\genuinecoder\main\MainController.class
+com\genuinecoder\panel\SidePanelController.class
+com\genuinecoder\splash\SplashController.class
+com\genuinecoder\Launcher.class
